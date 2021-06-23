@@ -15,6 +15,7 @@
 		0745E3B12683B6890055413E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0745E3AF2683B6890055413E /* LaunchScreen.storyboard */; };
 		0745E3BC2683B6890055413E /* amecalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745E3BB2683B6890055413E /* amecalculatorTests.swift */; };
 		0745E3C72683B6890055413E /* amecalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745E3C62683B6890055413E /* amecalculatorUITests.swift */; };
+		0745E3D82683B7320055413E /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745E3D72683B7320055413E /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0745E3C22683B6890055413E /* amecalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = amecalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0745E3C62683B6890055413E /* amecalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amecalculatorUITests.swift; sourceTree = "<group>"; };
 		0745E3C82683B6890055413E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0745E3D72683B7320055413E /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				0745E3AD2683B6890055413E /* Assets.xcassets */,
 				0745E3AF2683B6890055413E /* LaunchScreen.storyboard */,
 				0745E3B22683B6890055413E /* Info.plist */,
+				0745E3D72683B7320055413E /* Calculator.swift */,
 			);
 			path = amecalculator;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0745E3A92683B6890055413E /* ViewController.swift in Sources */,
+				0745E3D82683B7320055413E /* Calculator.swift in Sources */,
 				0745E3A52683B6890055413E /* AppDelegate.swift in Sources */,
 				0745E3A72683B6890055413E /* SceneDelegate.swift in Sources */,
 			);
