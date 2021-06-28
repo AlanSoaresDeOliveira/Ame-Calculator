@@ -16,26 +16,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9j-1i-8pr">
-                                <rect key="frame" x="166" y="389" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVa-y6-Pnk">
+                                <rect key="frame" x="0.0" y="314" width="414" height="582"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLI-us-3Bi" userLabel="Stack one">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="RU6-R6-hmB"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXe-Dl-68Y" userLabel="Stack two">
+                                        <rect key="frame" x="0.0" y="110" width="414" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="Ahe-QP-gho"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNk-qi-R44" userLabel="Stack three">
+                                        <rect key="frame" x="0.0" y="220" width="414" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="eCU-Lf-h5I"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMt-HF-elW" userLabel="Stack four">
+                                        <rect key="frame" x="0.0" y="330" width="414" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="9Pb-k6-6cd"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgi-e7-EvR" userLabel="Stack five">
+                                        <rect key="frame" x="0.0" y="440" width="414" height="142"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="142" id="tKZ-ae-Amq"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <color key="tintColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstItem="bMt-HF-elW" firstAttribute="top" secondItem="aNk-qi-R44" secondAttribute="bottom" id="7u3-G1-geD"/>
+                                    <constraint firstAttribute="trailing" secondItem="rLI-us-3Bi" secondAttribute="trailing" id="8qF-gl-R6Z"/>
+                                    <constraint firstItem="rLI-us-3Bi" firstAttribute="leading" secondItem="GVa-y6-Pnk" secondAttribute="leading" id="DZB-u6-10y"/>
+                                    <constraint firstAttribute="trailing" secondItem="hgi-e7-EvR" secondAttribute="trailing" id="LPA-CF-KBH"/>
+                                    <constraint firstItem="bMt-HF-elW" firstAttribute="leading" secondItem="GVa-y6-Pnk" secondAttribute="leading" id="Le9-1F-jeN"/>
+                                    <constraint firstAttribute="trailing" secondItem="vXe-Dl-68Y" secondAttribute="trailing" id="U4B-T0-3jd"/>
+                                    <constraint firstItem="vXe-Dl-68Y" firstAttribute="top" secondItem="rLI-us-3Bi" secondAttribute="bottom" id="Xw2-Or-FIv"/>
+                                    <constraint firstAttribute="trailing" secondItem="bMt-HF-elW" secondAttribute="trailing" id="Yf1-ah-7oO"/>
+                                    <constraint firstItem="aNk-qi-R44" firstAttribute="leading" secondItem="GVa-y6-Pnk" secondAttribute="leading" id="ZO1-Y4-aXp"/>
+                                    <constraint firstAttribute="trailing" secondItem="aNk-qi-R44" secondAttribute="trailing" id="ZY7-Xy-7iq"/>
+                                    <constraint firstItem="rLI-us-3Bi" firstAttribute="top" secondItem="GVa-y6-Pnk" secondAttribute="top" id="awg-sF-pbJ"/>
+                                    <constraint firstItem="hgi-e7-EvR" firstAttribute="top" secondItem="bMt-HF-elW" secondAttribute="bottom" id="edY-mC-mhM"/>
+                                    <constraint firstAttribute="bottom" secondItem="hgi-e7-EvR" secondAttribute="bottom" id="nAQ-dR-spd"/>
+                                    <constraint firstItem="vXe-Dl-68Y" firstAttribute="leading" secondItem="GVa-y6-Pnk" secondAttribute="leading" id="p9N-HM-SbB"/>
+                                    <constraint firstItem="aNk-qi-R44" firstAttribute="top" secondItem="vXe-Dl-68Y" secondAttribute="bottom" id="sRW-ze-GsX"/>
+                                    <constraint firstItem="hgi-e7-EvR" firstAttribute="leading" secondItem="GVa-y6-Pnk" secondAttribute="leading" id="uAN-Zw-2A4"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i9j-1i-8pr" secondAttribute="trailing" constant="202" id="9Dl-q1-BnP"/>
+                            <constraint firstItem="GVa-y6-Pnk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5Vr-IK-pwU"/>
+                            <constraint firstItem="GVa-y6-Pnk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jq5-e4-9yr"/>
+                            <constraint firstItem="GVa-y6-Pnk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="270" id="Que-gl-cYV"/>
+                            <constraint firstAttribute="bottom" secondItem="GVa-y6-Pnk" secondAttribute="bottom" id="aaL-V2-66y"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-267" y="115"/>
+            <point key="canvasLocation" x="-268.1159420289855" y="114.50892857142857"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
