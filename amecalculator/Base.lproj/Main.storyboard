@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,39 +12,39 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="amecalculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVa-y6-Pnk">
-                                <rect key="frame" x="0.0" y="314" width="414" height="582"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVa-y6-Pnk">
+                                <rect key="frame" x="0.0" y="270" width="1024" height="754"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLI-us-3Bi" userLabel="Stack one">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="RU6-R6-hmB"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXe-Dl-68Y" userLabel="Stack two">
-                                        <rect key="frame" x="0.0" y="110" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="110" width="1024" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="Ahe-QP-gho"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNk-qi-R44" userLabel="Stack three">
-                                        <rect key="frame" x="0.0" y="220" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="220" width="1024" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="eCU-Lf-h5I"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMt-HF-elW" userLabel="Stack four">
-                                        <rect key="frame" x="0.0" y="330" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="330" width="1024" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="9Pb-k6-6cd"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgi-e7-EvR" userLabel="Stack five">
-                                        <rect key="frame" x="0.0" y="440" width="414" height="142"/>
+                                        <rect key="frame" x="0.0" y="440" width="1024" height="142"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="142" id="tKZ-ae-Amq"/>
                                         </constraints>

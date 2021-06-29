@@ -17,6 +17,7 @@
 		0745E3C72683B6890055413E /* amecalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745E3C62683B6890055413E /* amecalculatorUITests.swift */; };
 		0745E3D82683B7320055413E /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745E3D72683B7320055413E /* Calculator.swift */; };
 		075E3745268506D000D4F573 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075E3744268506D000D4F573 /* Keyboard.swift */; };
+		077CB2AF268BA3090045B2E7 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077CB2AE268BA3090045B2E7 /* UIButton+Extensions.swift */; };
 		07B8AD85268511D400102393 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B8AD84268511D400102393 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		0745E3C82683B6890055413E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0745E3D72683B7320055413E /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		075E3744268506D000D4F573 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		077CB2AE268BA3090045B2E7 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		07B8AD84268511D400102393 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				07B8AD84268511D400102393 /* UIView+Extension.swift */,
+				077CB2AE268BA3090045B2E7 /* UIButton+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07B8AD85268511D400102393 /* UIView+Extension.swift in Sources */,
+				077CB2AF268BA3090045B2E7 /* UIButton+Extensions.swift in Sources */,
 				0745E3A92683B6890055413E /* ViewController.swift in Sources */,
 				0745E3D82683B7320055413E /* Calculator.swift in Sources */,
 				075E3745268506D000D4F573 /* Keyboard.swift in Sources */,
