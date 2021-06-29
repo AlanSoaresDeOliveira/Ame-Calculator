@@ -15,7 +15,7 @@
 		0745E3B12683B6890055413E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0745E3AF2683B6890055413E /* LaunchScreen.storyboard */; };
 		0745E3BC2683B6890055413E /* amecalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745E3BB2683B6890055413E /* amecalculatorTests.swift */; };
 		0745E3C72683B6890055413E /* amecalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745E3C62683B6890055413E /* amecalculatorUITests.swift */; };
-		0745E3D82683B7320055413E /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745E3D72683B7320055413E /* Calculator.swift */; };
+		0745E3D82683B7320055413E /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745E3D72683B7320055413E /* CalculatorViewModel.swift */; };
 		075E3745268506D000D4F573 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075E3744268506D000D4F573 /* Keyboard.swift */; };
 		077CB2AF268BA3090045B2E7 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077CB2AE268BA3090045B2E7 /* UIButton+Extensions.swift */; };
 		07B8AD85268511D400102393 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B8AD84268511D400102393 /* UIView+Extension.swift */; };
@@ -53,7 +53,7 @@
 		0745E3C22683B6890055413E /* amecalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = amecalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0745E3C62683B6890055413E /* amecalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amecalculatorUITests.swift; sourceTree = "<group>"; };
 		0745E3C82683B6890055413E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0745E3D72683B7320055413E /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		0745E3D72683B7320055413E /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		075E3744268506D000D4F573 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		077CB2AE268BA3090045B2E7 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		07B8AD84268511D400102393 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -109,6 +109,7 @@
 			children = (
 				07B8AD82268511B800102393 /* Utils */,
 				075E3743268506B700D4F573 /* View */,
+				077CB2B3268BA9110045B2E7 /* ViewModel */,
 				075E37422685064D00D4F573 /* Controller */,
 				0745E3A42683B6890055413E /* AppDelegate.swift */,
 				0745E3A62683B6890055413E /* SceneDelegate.swift */,
@@ -116,7 +117,6 @@
 				0745E3AD2683B6890055413E /* Assets.xcassets */,
 				0745E3AF2683B6890055413E /* LaunchScreen.storyboard */,
 				0745E3B22683B6890055413E /* Info.plist */,
-				0745E3D72683B7320055413E /* Calculator.swift */,
 			);
 			path = amecalculator;
 			sourceTree = "<group>";
@@ -153,6 +153,14 @@
 				075E3744268506D000D4F573 /* Keyboard.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		077CB2B3268BA9110045B2E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0745E3D72683B7320055413E /* CalculatorViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		07B8AD82268511B800102393 /* Utils */ = {
@@ -305,7 +313,7 @@
 				07B8AD85268511D400102393 /* UIView+Extension.swift in Sources */,
 				077CB2AF268BA3090045B2E7 /* UIButton+Extensions.swift in Sources */,
 				0745E3A92683B6890055413E /* ViewController.swift in Sources */,
-				0745E3D82683B7320055413E /* Calculator.swift in Sources */,
+				0745E3D82683B7320055413E /* CalculatorViewModel.swift in Sources */,
 				075E3745268506D000D4F573 /* Keyboard.swift in Sources */,
 				0745E3A52683B6890055413E /* AppDelegate.swift in Sources */,
 				0745E3A72683B6890055413E /* SceneDelegate.swift in Sources */,

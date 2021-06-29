@@ -1,5 +1,5 @@
 //
-//  Calculator.swift
+//  CalculatorViewModel.swift
 //  amecalculator
 //
 //  Created by Alan Soares de Oliveira on 23/06/21.
@@ -12,7 +12,7 @@ enum CalculatorError: Error {
     case divisionByZero
 }
 
-class Calculator {
+class CalculatorViewModel {
     
     public func add(x: Float, y: Float) -> Float {
         return 0

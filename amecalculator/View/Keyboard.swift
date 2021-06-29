@@ -7,9 +7,16 @@
 
 import UIKit
 
+protocol KeyboardDelegate: class {
+    func tappedTheKeyboardNumber(_ text: String)
+    func tappedTheKeyboardClear()
+}
+
 class Keyboard: UIView {
     
     // MARK: - Properties
+    
+    var delegate: KeyboardDelegate?
     
     private lazy var acButton: UIButton = .createKeyboardButton(title: "AC", backgroundColor: .systemGray3)
     private lazy var divideButton: UIButton = .createKeyboardButton(title: "/", backgroundColor: .systemOrange)
@@ -36,7 +43,9 @@ class Keyboard: UIView {
         self.frame = CGRect(x: 0, y:  0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.60)
         backgroundColor = .black
         
+        createTarget()
         configureStacksViewLayout()
+        
     }
     
     required init?(coder: NSCoder) {
@@ -121,5 +130,20 @@ class Keyboard: UIView {
     
     func heigthOfCell() -> CGFloat {
         return viewHeight / 5
+    }
+    
+    func createTarget() {
+        acButton.addTarget(self, action: #selector(cleanScreenLabel), for: .touchUpInside)
+        oneButton.addTarget(self, action: #selector(numberTapped(button:)), for: .touchUpInside)
+        twoButton.addTarget(self, action: #selector(numberTapped(button:)), for: .touchUpInside)
+    }
+    
+    @objc func cleanScreenLabel() {
+        delegate?.tappedTheKeyboardClear()
+    }
+    
+    @objc func numberTapped(button: UIButton) {
+        guard let textButton = button.titleLabel?.text else { return }
+        delegate?.tappedTheKeyboardNumber(textButton)
     }
 }
